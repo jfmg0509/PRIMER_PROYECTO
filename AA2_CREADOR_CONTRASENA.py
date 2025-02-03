@@ -17,5 +17,3 @@ while True:
         break #el breaK hace que se cierre el bucle
     else:
         print("no te olvides de colocar un número y un caracter especial")
-        
-

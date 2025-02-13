@@ -2,7 +2,7 @@ numbers= ["1","2","3","4","5","6","7","8","9","0"]
 specials_character=["+", "/", "@", "#", "$", "%", "&", "*", "!", "?"]
 uppercase_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] #Genera lista de mayúsculas
 while True:
-    password_name= input("ingrese el nombre de su contraseña: ")
+    password_name= input("Ingrese su contraseña: ")
     is_number_found= False #esta variable te indica si encontramos números en la contraseña
     is_special_character_found= False #esta variable indica si se encontraron caracteres especiales en la contraseña 
     is_uppercase_found= False #esta variable indica si se encontraron mayúsculas en la contraseña
@@ -19,7 +19,7 @@ while True:
             is_uppercase_found = True
             break
     if is_number_found and is_special_character_found and is_uppercase_found:
-        print ("tu contraseña es correcta.")
+        print ("Tu contraseña es correcta.")
         break #el breaK hace que se cierre el bucle
     else:
-        print("no te olvides de colocar un número y un caracter especial")
+        print("No te olvides de colocar un número y un caracter especial.")

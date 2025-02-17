@@ -1,5 +1,5 @@
-name=input("ingresa tu nombre: ")
-print (len(name))
+name="emill"
+print (len("name"))
 longitud= len(name)
 if longitud>5:
     print("ok")

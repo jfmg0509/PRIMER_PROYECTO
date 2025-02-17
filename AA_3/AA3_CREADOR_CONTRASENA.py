@@ -22,4 +22,4 @@ while True:
         print ("Tu contraseña es correcta.")
         break #el breaK hace que se cierre el bucle
     else:
-        print("No te olvides de colocar un número y un caracter especial.")
+        print("No te olvides de juancolocar un número y un caracter especial.")

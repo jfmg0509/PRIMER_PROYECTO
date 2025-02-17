@@ -6,7 +6,7 @@ while True:
     is_number_found= False #esta variable te indica si encontramos números en la contraseña
     is_special_character_found= False #esta variable indica si se encontraron caracteres especiales en la contraseña 
     is_uppercase_found= False #esta variable indica si se encontraron mayúsculas en la contraseña
-    for number in numbers: #indica 
+    for number in numbers: #indica jA
         if number in password_name:
             is_number_found = True
             break

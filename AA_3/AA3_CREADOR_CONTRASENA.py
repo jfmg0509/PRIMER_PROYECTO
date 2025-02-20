@@ -1,6 +1,9 @@
-numbers= ["1","2","3","4","5","6","7","8","9","0"]
+numbers= ("1","2","3","4","5","6","7","8","9","0")
 specials_character=["+", "/", "@", "#", "$", "%", "&", "*", "!", "?"]
-uppercase_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] #Genera lista de mayúsculas
+dictionary_of_uppercase_letters = {
+    "uppercase_letters": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+}
+#uppercase_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] #Genera lista de mayúsculas
 while True:
     password_name= input("Ingrese su contraseña: ")
     is_number_found= False #esta variable te indica si encontramos números en la contraseña
@@ -14,7 +17,7 @@ while True:
         if especial in password_name:
             is_special_character_found = True
             break
-    for letter in uppercase_letters:
+    for letter in dictionary_of_uppercase_letters["uppercase_letters"]:
         if letter in password_name:
             is_uppercase_found = True
             break

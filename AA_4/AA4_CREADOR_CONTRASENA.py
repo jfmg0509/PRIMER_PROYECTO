@@ -28,6 +28,6 @@ while True:
         if not is_number_found:# el not me comprueba que no se cumple esta condición
             print ("No te olvides de colocar un número")
         if not is_special_character_found:
-            print ("No te olvides de colodar un caracter especial")
+            print ("No te olvides de colocar un caracter especial")
         if not is_uppercase_found:
             print ("No te olvides de colocar una Mayúsculas")

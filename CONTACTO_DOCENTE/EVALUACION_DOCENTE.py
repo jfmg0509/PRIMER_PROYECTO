@@ -1,24 +1,20 @@
-def verificar_contraseña(password, numbers, specials_character, uppercase_letters):
-    is_number_found = False
-    is_special_character_found = False
-    is_uppercase_found = False
+def contains_element(list_of_element, password):
+    '''
+    Función que recibe una lista de elementos y una contraseña, y retorna True si alguno de los elementos de la lista está en la contraseña, y False en caso contrario.
+    '''
+    for element in list_of_element:
+        if element in password:
+            return True
+    return False
 
-    for number in numbers:
-        if number in password:
-            is_number_found = True
-            break
+def check_password_requirements(password, numbers, specials_character, uppercase_letters):
 
-    for especial in specials_character:
-        if especial in password:
-            is_special_character_found = True
-            break
+    is_number_found = contains_element(numbers, password) # Se llama a la función contains_element para verificar si hay un número en la contraseña
+    is_special_character_found = contains_element(specials_character, password) # Se llama a la función contains_element para verificar si hay un caracter especial en la contraseña
+    is_uppercase_found = contains_element(uppercase_letters, password) # Se llama a la función contains_element para verificar si hay una mayúscula en la contraseña
 
-    for letter in uppercase_letters:
-        if letter in password:
-            is_uppercase_found = True
-            break
+    return is_number_found, is_special_character_found, is_uppercase_found # Se retornan los valores de las variables que indican si se cumplieron los requisitos de la contraseña
 
-    return is_number_found, is_special_character_found, is_uppercase_found
 
 numbers = ("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
 specials_character = ["+", "/", "@", "#", "$", "%", "&", "*", "!", "?"]
@@ -28,8 +24,9 @@ dictionary_of_uppercase_letters = {
 
 while True:
     password_name = input("Ingrese su contraseña: ")
-    is_number_found, is_special_character_found, is_uppercase_found = verificar_contraseña(
-        password_name, numbers, specials_character, dictionary_of_uppercase_letters["uppercase_letters"]
+    is_number_found, is_special_character_found, is_uppercase_found = check_password_requirements(
+        password_name, numbers, specials_character, dictionary_of_uppercase_letters[
+            "uppercase_letters"]
     )
 
     if is_number_found and is_special_character_found and is_uppercase_found:

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificación de Requisitos de Contraseña</title>
+    <title>Verificación de Requisitos de Contraseña</title> 
 </head>
 <body>
     <h1>Verificación de Requisitos de Contraseña</h1>

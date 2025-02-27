@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Verificación de Requisitos de Contraseña</h1>
-    <p>Este script está diseñado para verificar si una contraseña cumple con ciertos requisitos de seguridad. A continuación, se proporciona una descripción detallada de las funciones, variables y el flujo del programa.</p>
+    <p>Este script tiene por objetivo verificar si una contraseña cumple con ciertos requisitos de seguridad. A continuación, se proporciona una descripción detallada de las funciones, variables y el flujo del programa.</p>
     <h2>Funciones</h2>
     <ol>
         <li>
